@@ -1,0 +1,127 @@
+\documentclass[onecolumn]{article}
+%\usepackage{url}
+%\usepackage{algorithmic}
+\usepackage[a4paper]{geometry}
+\usepackage{datetime}
+\usepackage[margin=2em, font=small,labelfont=it]{caption}
+\usepackage{graphicx}
+\usepackage{mathpazo} % use palatino
+\usepackage[scaled]{helvet} % helvetica
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{subfigure}
+\usepackage{graphicx}
+% Letterspacing macros
+\newcommand{\spacecaps}[1]{\textls[200]{\MakeUppercase{#1}}}
+\newcommand{\spacesc}[1]{\textls[50]{\textsc{\MakeLowercase{#1}}}}
+
+\title{\spacecaps{Assignment Report : Ceng 2034 Operating Systems Makeup Exam} }
+
+\author{BARIŞ DİLEK\\barisdilek@posta.mu.edu.tr\\github.com/barisdilek48/ceng-2034-2020-makeup}
+%\date{\today\\\currenttime}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+In this study, we have seen the variations of the revealed codes according to the operating systems and to prove their differences. In this study, we have seen how operating systems manage processes or memory. Linux commands and what can be done with these commands, also we use python programming language and we learned that we can manage with the data structures of python.
+\end{abstract}
+
+\section{Introduction}
+The purpose of this laboratory is to see how operating systems manage processes and memories in the language of python. In this lab, we learned  the differences and aim to create better quality codes.
+
+\section{Assignments}
+In this experiment, although we learned some of the Linux commands, we also used them.Also in this project, multiprocessing usage were made using Python.
+
+\subsubsection{}{ Language and Application version in this project}
+Python 3.8\\
+PyCharm Community Edition 2020.1.1
+
+\subsubsection{Libraries}
+\textbf{hashlib}, is a library that contains various popular encryption algorithms.And allows us to encrypt our data in different algorithms.\\
+\textbf{time}, module provides various time-related functions.\\
+\textbf{threading}, module constructs higher-level threading interfaces on top of the lower level thread module.\\
+\textbf{os}, module provides a portable way of using operating system dependent functionality.\\
+\textbf{urllib.request}, module defines functions and classes which help in opening URLs (mostly HTTP) in a complex world — basic and digest authentication, redirections, cookies and more.\\
+
+\subsection{solutions}
+
+\subsubsection{Create a new child process with syscall and print its PID.}
+I used the \textbf{.fork()} function in the \textbf{os} library to create a child process. With this function, if the child whose pid (process id) is equal to 0 is not the process, it is the parent process.\\
+I used the \textbf{.getpid()} function in the \textbf{os} library to write the process id of the child process.\\
+
+\subsubsection{Download the files via the given URL list.}
+I used the \textbf{urllib.requests} library to download the pictures in the given urls. I made the download process in the content named \textbf{download-file()}. To do the download given URL list
+
+\subsubsection{Multiprocessing Part}
+Check the system and learn the number of CPU cores. Create n processes if there are n cores.\\
+Use processes for the correct task!\\
+Control duplicate files within the downloaded files of your python code. You should do it by using multi processing techniques. (Hint: you can use hashlib -md5/sha256- in python to check file checksum)\\ 
+The main process should check the other created processes and if takes
+more than 30 seconds, kill those processes (by sending signal from the main
+process)\\ 
+The main process should check If the other processes didn't end successfully,
+then it should try again that process's job.\\
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=87mm]{OS1.PNG}
+    \caption{MULTIPROCESSING USAGE}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=91mm]{OS2.PNG}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=91mm]{OS3.PNG}
+\end{figure}
+
+\newpage
+\section{Results}
+As a result, We learned that if our operating system is Linux or Windows we can easily use
+multiprocessing.
+-We learned multiprocessing in python.Then we understood their features thoroughly.
+-Multi-thread and multi-process are different. They can be used effectively in Unix-based operating systems.
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=100mm]{OS.PNG}
+    \caption{specifying the needed memory hash buffer and film files}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=100mm]{OS4.PNG}
+    \caption{Online Linux python compiler output}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=100mm]{OS5.PNG}
+    \caption{When we run the code on Windows OS}
+\end{figure}
+
+\newpage
+\section{Conclusion}
+As a conclusion, the differences of the python language according to the operating systems and the
+outputs according to the operating systems were examined and the results were observed.
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=100mm]{OS6.png}
+    \caption{Other issues we learned multiprocessing and multithreading in python.In the picture above, we have seen a brief definition of the two terms.}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=100mm]{OS7.png}
+    \caption{We observe the difference between multithreading and multiprocessing. Multithreading takes 20 seconds, while multiprocessing performs faster processing. So now that we are convinced that they’re not the same, we would like to know why.We have seen and understood the difference from the pictures above.}
+\end{figure}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
