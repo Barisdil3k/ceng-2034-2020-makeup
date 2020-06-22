@@ -4,8 +4,12 @@ Ceng_2034 Operating Systems MAKEUP Homework Creating Child Process
 
 Libraries:
 
-hashlib, is a library that contains various popular encryption algorithms.And allows us to encrypt our data in different algorithms. time, module provides various time-related functions. 
+hashlib, is a library that contains various popular encryption algorithms.And allows us to encrypt our data in different algorithms. 
+
+time, module provides various time-related functions. 
+
 threading, module constructs higher-level threading interfaces on top of the lower level thread module. 
+
 os, module provides a portable way of using operating system dependent functionality. 
 
 urllib.request}, module defines functions and classes which help in opening URLs (mostly HTTP) in a complex world basic and digest authentication, redirections, cookies and more.
