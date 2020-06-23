@@ -18,9 +18,12 @@ INPUT: URLs = [ "http://wiki.netseclab.mu.edu.tr/images/thumb/f/f7/MSKU-Blockcha
 
 OUTPUT:
 
-The ID of the parent process: 1 The ID of the current process: 58
+The ID of the parent process: 1 
+The ID of the current process: 58
 
-The ID of the child process: 70 Successful (200): https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Hawai%27i.jpg/1024px-Hawai%27i.jpg
+The ID of the child process: 70 
+
+Successful (200): https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Hawai%27i.jpg/1024px-Hawai%27i.jpg
 
 Successful (200): https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Hawai%27i.jpg/1024px-Hawai%27i.jpg
 
